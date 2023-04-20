@@ -404,7 +404,7 @@ header nav ul li a.active {
 /* START CLIENTS  */
 .clients {
   padding-top: var(--secPadding);
-  padding-bottom: var(--secPadding);
+  padding-bottom: 70px;
 }
 .clients .imgs {
   margin-top: 80px;
@@ -413,7 +413,13 @@ header nav ul li a.active {
   justify-content: space-evenly;
 }
 .clients .imgs img {
-  height: 70px;
+  height: 80px;
+}
+@media (max-width: 767px) {
+  .clients .imgs img {
+    height: 55px;
+    margin: 0 11px;
+  }
 }
 /* END CLIENTS  */
 /* Start contact  */
@@ -446,6 +452,10 @@ header nav ul li a.active {
   .contact-about .container .about-us {
     margin-bottom: 10px;
     margin-right: 0;
+    padding: 50px;
+  }
+  .contact-about .container .about-us p {
+    font-size: 15px;
   }
 }
 .contact-about .container .about-us h3 {
@@ -465,7 +475,8 @@ header nav ul li a.active {
   transform: translateX(-50%);
 }
 .contact-about .container .about-us p {
-  line-height: 1.3;
+  line-height: 1.6;
+  font-size: 16px;
 }
 .contact-about .contact-us {
   border: 1px solid #777;
@@ -475,12 +486,9 @@ header nav ul li a.active {
   flex-basis: 50%;
 }
 .contact-about .contact-us h3 {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   font-size: 25px;
   font-weight: 600;
-}
-.contact-about .contact-us .text-box {
-  padding: 10px;
 }
 .contact-about .contact-us .text-box input {
   position: relative;
@@ -489,7 +497,7 @@ header nav ul li a.active {
   outline: none;
   border-bottom: 1px solid #777;
   background: none;
-  min-width: 100%;
+  width: 100%;
   caret-color: white;
   height: 100%;
   color: white;
